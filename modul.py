@@ -1,5 +1,7 @@
 import random
 
+barang = []
+
 # Class Transaction
 class Transaction():
   """ Create class transaction for customer"""
@@ -200,12 +202,13 @@ def main_menu():
     user = input("Please Select the menu")
     if user == '2':
       return print("Thank you for using this program")
-      sys.exit()
+      break
     elif user == '1':
       Create_transaction()
     else:
       print('please give a proper input')
-
+  sys.exit()
+  
 # Transaction Menu
 def transaction_menu():
   """" Transaction on each user"""
